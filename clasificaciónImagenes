@@ -1,1 +1,61 @@
+**Descripción del Proyecto**
+Este proyecto tiene como objetivo clasificar imágenes de animales en diferentes categorías utilizando redes neuronales profundas. Aprovechamos un conjunto de datos público de Kaggle que contiene imágenes de gatos, perros y serpientes en carpetas etiquetadas. El enfoque principal fue construir un modelo eficiente usando modelos MLP, CNN y modelos preentrenados, y ajustando diferentes parámetros, con el fin de diferenciar entre estas clases con alta precisión.
 
+**Estructura del Proyecto**
+
+notebooks/: Incluye el análisis exploratorio y el código para el entrenamiento del modelo.
+README.md: Descripción del proyecto y sus resultados.
+
+**Herramientas y Tecnologías Utilizadas**
+
+Python:
+TensorFlow y Keras para construir y entrenar modelos de redes neuronales.
+Matplotlib y Seaborn para la visualización de datos, entre otras .
+Google Colab: Para el desarrollo y entrenamiento del modelo.
+Kaggle API: Para descargar el dataset directamente en el entorno de trabajo.
+Arquitecturas de Red:
+Redes Convolucionales (CNN) para clasificación de imágenes.
+Modelos Multicapa (MLP) 
+Modelos preentrenados
+Técnicas de aumento de datos para mejorar la generalización del modelo.
+
+
+**Metodología**
+
+Exploración de Datos:
+Visualización de imágenes y análisis de clases en el dataset.
+Revisión de la distribución de clases para abordar posibles desbalances.
+
+Preprocesamiento:
+Redimensionamiento de imágenes a 128x128 píxeles por la capacidad computacional no se pudo trabajar en 254x254.
+
+Normalización de valores de píxeles entre 0 y 1.
+Aplanamiento de imágenes para el uso de modelos MLP
+Aumento de datos mediante rotaciones, recortes y cambios de brillo.
+
+Modelado:
+Construcción de un modelo CNN con capas convolucionales y densas. 
+Uso de una capa de salida softmax para la clasificación multiclase.
+Optimización con el optimizador Adam y función de pérdida categórica cruzada.
+
+Construcción de un modelo MLP 
+Uso de una capa de salida softmax para la clasificación multiclase.
+Optimización con el optimizador Adam y función de pérdida categórica cruzada.
+Los parámetros se ajustaron en los modelos 
+
+Entrenamiento:
+División del dataset en conjuntos de entrenamiento y validación (80/20).
+Entrenamiento durante 20 épocas con monitoreo de pérdida y precisión.
+
+Evaluación:
+Generación de métricas como precisión, recall y F1-score.
+Matriz de confusión para analizar predicciones correctas e incorrectas.
+
+Resultados
+
+Precisión del Modelo: el modelo que mejor se ajustó a los datos fue CNN con optimización Adam con tasa por defecto y función de pérdida categórica cruzada
+
+Nombre: Margarita Rojas Pérez
+Correo Electrónico:mrp290189@gmail.com
+LinkedIn: : https://shorturl.at/2xDKI
+GitHub:https://github.com/Mar89R/estad-stica/tree/main
